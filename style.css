@@ -1,0 +1,92 @@
+header{
+  background-color: whitesmoke;
+  border-bottom: 2px solid black;
+}
+
+footer{
+  background-color: #002D3D;
+  color: whitesmoke;
+  padding: 1em;
+}
+
+.hero-img{
+  min-height: 85vh;
+  background-image: url(https://images.unsplash.com/photo-1522679056866-8dbbc8774a9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1247&q=80);
+  background-position: center;
+  background-size: cover;
+  align-content: space-between;
+}
+
+.sky-bad{
+  color: whitesmoke;
+}
+
+.sky-good{
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: 1px 1px 5px black;
+}
+.rocks-good{
+  font-size: 22px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+.lightParagraph-bad{
+  margin: 2em;
+  background-color: #B5DCEB;
+  color: #888585;
+  padding: 2em 5em;
+  
+}
+
+.lightParagraph-good{
+  margin: 2em;
+  background-color: #B5DCEB;
+  color: #0e0d4c;
+  padding: 2em 5em;
+}
+
+.darkParagraph-bad{
+  background-color: #002D3D;
+  color: #3E3838;
+  padding: 2em 5em;
+}
+
+.darkParagraph-good{
+  background-color: #002D3D;
+  color: #c2e2f5;
+  padding: 2em 5em;
+}
+
+.lighthouseInWater-bad{
+  max-height: 70vh;
+}
+
+.lighthouseInWater-good{
+  max-height: 70vh;
+}
+
+.birdLighthouse-bad{
+  max-height: 50vh;
+}
+
+.birdLighthouse-good{
+  max-height: 50vh;
+}
+
+.card-shadow{
+  border-radius: 1em;
+  box-shadow:3px 3px black;
+}
+
+.bird-section{
+  background-color: #B5DCEB;
+}
+
+@media screen and ( max-width: 768px ) {
+  .lightParagraph-bad, .lightParagraph-good, .darkParagraph-bad, .darkParagraph-good {
+    padding: 2em;
+  }
+}

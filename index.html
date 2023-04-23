@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta id="viewportName" name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no"
+    maximum-scale="4">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body aria-hidden="true">
+
+  <header class="sticky-top">
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-12 d-flex py-2 px-3 d-flex justify-content-between align-items-center">
+          <h1>Lighthouse</h1>
+          <button id="lighthouseButton" onclick="toggleClasses()" class="btn btn-outline-dark fs-2"
+            title="Toggle between good and bad website">
+            <i class="mdi mdi-lighthouse"></i>
+          </button>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+
+      <section class="row align-items-between hero-img">
+        <div class="col-12 p-3">
+          <p id="sky" class="sky-bad">This lighthouse is beautiful, and this text is so easy to read.
+          </p>
+        </div>
+        <div class="col-12 p-3 d-flex justify-content-end">
+          <p id="rocks" class="rocks-bad">Man, the rocks down here sure are dark, huh?</p>
+        </div>
+      </section>
+
+      <section class="row align-items-center mb-3">
+        <div class="col-12 col-md-6 p-3 p-md-5">
+          <div id="multiHeaders" class="multiHeaders-bad mb-3">
+            <h5>Where did the lighthouses come from?</h5>
+            <h2>Who even built the lighthouses?</h2>
+            <h4>What do lighthouses actually do?</h4>
+            <h3>Why do we love lighthouses so much?</h3>
+          </div>
+          <h1>No one knows.</h1>
+          <p id="lightParagraph" class="lightParagraph-bad card-shadow">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corporis sed doloribus incidunt nam nemo
+            error accusamus molestias quidem saepe. Tempora beatae et explicabo quasi reiciendis ducimus nobis libero
+            modi optio natus aliquam rerum numquam commodi quibusdam, delectus amet pariatur voluptates saepe dolorem
+            est atque! Quam vitae illum, doloremque ratione animi labore nobis ullam repellat atque adipisci repudiandae
+            expedita at.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 text-center p-4">
+          <img id="lighthouseInWater" class="lighthouseInWater-bad img-fluid card-shadow"
+            src="https://images.unsplash.com/photo-1581408773622-e2bb68f24344?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="">
+        </div>
+      </section>
+
+      <section class="row bird-section align-items-center">
+        <div class="col-12 col-md-6 p-4 text-center order-2 order-md-1">
+          <img id="birdLighthouse"
+            src="https://images.unsplash.com/photo-1559061156-4a46ec29107d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="" class="img-fluid card-shadow birdLighthouse-bad">
+        </div>
+        <div class="col-12 col-md-6 order-1 order-md-2 p-4">
+          <p id="darkParagraph" class="darkParagraph-bad card-shadow">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi ab molestiae totam corrupti maiores
+            eligendi vel odio animi necessitatibus reiciendis velit eos possimus repudiandae dolore doloribus debitis
+            temporibus ad voluptas, id at autem hic omnis aliquid. Blanditiis, quae ducimus culpa eligendi illum et
+            itaque voluptate voluptatem beatae, quis unde molestias fuga deserunt modi nam enim, necessitatibus
+            quibusdam ea! Maxime, iste, debitis fugit minima aspernatur beatae ab neque sit doloribus id facilis
+            dignissimos, aut qui mollitia. Eveniet reprehenderit aut esse.
+          </p>
+          <div class="d-flex justify-content-center">
+            <button onclick="notifyUser(true)" class="btn btn-outline-dark fs-3 me-4" id="button"
+              title="I love lighthouse!">
+              I ♥ <i class="mdi mdi-lighthouse"></i>
+            </button>
+            <button onclick="notifyUser(false)" class="btn btn-outline-danger fs-3" id="button"
+              title="I hate lighthouse!">
+              I ❌ <i class="mdi mdi-lighthouse"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div>
+            Made with 🍺 by Jerms
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+    defer></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
